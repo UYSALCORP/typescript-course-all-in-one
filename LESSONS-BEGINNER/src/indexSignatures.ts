@@ -8,13 +8,15 @@
 //     // Pizza: number; // Specific key with type number
 // }
 
+// Interface tanımladık.
 interface TransactionObj {
+    // index
     readonly [index: string]: number;
     Pizza: number,
     Books: number,
     Job: number,
 }
-
+// Oluşturduğumuz interface'den değişken tanımladık
 const todayTransactions: TransactionObj = {
     Pizza: 10,
     Books: -5,
@@ -43,7 +45,7 @@ interface Student {
     // [key: string]: string | number | number[] | undefined; // Allows additional properties with string keys and values of type string or number
     name: string;
     GPA: number;
-    classes?: number[]; // Optional property with an array of numbers
+    classes?: number[];
 }
 
 const student: Student = {

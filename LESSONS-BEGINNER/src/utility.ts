@@ -103,6 +103,7 @@ type NamesOnly = NonNullable<AllPossibleGrades>; // Excludes null and undefined,
 const createNewAssign = (title: string, points: number) => {
     return { title, points };
 }
+
 type NewAssign = ReturnType<typeof createNewAssign>; // { title: string, points: number }
 
 const tsAssign: NewAssign = createNewAssign("TypeScript Assignment", 100);

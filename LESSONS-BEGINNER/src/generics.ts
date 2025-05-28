@@ -14,10 +14,10 @@ const isObj = <T>(arg: T): boolean => {
     // and returns true if it is, false otherwise
 }
 
-console.log(isObj("Uysal"));
+console.log(isObj("Uysal")); // False
 console.log(isObj(true));
 console.log(isObj([1, 2, 3]));
-console.log(isObj({ name: "Uysal" }));
+console.log(isObj({ name: "Uysal" })); // True
 console.log(isObj(null));
 
 const isTrue = <T>(arg: T): { arg: T, is: boolean } => {
